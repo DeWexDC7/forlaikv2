@@ -1,0 +1,136 @@
+.container {
+    max-width: 600px;
+    min-height: 1150px;
+    margin: 20px auto;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    padding: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-image: url('../../../assets/Recurso 58.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        position: relative; /* Es importante para posicionar los hijos absolutos dentro de este contenedor */
+
+}
+
+.imagenenvio {
+    background-image: url('../../assets/Recurso 19.png'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover; /* Esto hará que la imagen cubra todo el botón */
+    border: none; /* Elimina el borde predeterminado que puedan tener los botones */
+    height: 60px; /* Define el alto del botón, puedes ajustar según tu preferencia */
+    width: 200px; /* Define el ancho del botón, puedes ajustar según tu preferencia */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    outline: none; /* Elimina el contorno que aparece al hacer clic en el botón */
+}
+
+
+.imagen-chiquita {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    width: 60px;
+    height: auto;
+    z-index: 3; /* Incrementar el z-index para asegurar que está por encima de otros elementos */
+}
+
+.imagen-datos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 60px;  /* Puedes ajustar este valor para cambiar la posición vertical */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Esto asegura que 'imagen-datos' esté por encima del botón de carga */
+}
+
+/* Nueva sección para el contenedor del botón de carga */
+.upload-section {
+    position: absolute;
+    top: 10%;  /* Esto lo posicionará debajo de 'imagen-datos', ajusta el porcentaje según sea necesario */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;  /* Asegura que esta sección esté debajo de 'imagen-datos' */
+}
+
+/* tus otros estilos permanecen igual */
+
+/* Estilos actualizados para el botón de carga */
+.upload-btn-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 120px; /* aumenta este valor si necesitas más espacio entre '.imagen-datos' y el botón */
+    transform: translateX(-50%); /* esto centra el botón horizontalmente */
+    z-index: 1;
+    cursor: pointer;
+    /* El ancho y alto se controlarán a través de '.custom-file-upload' */
+}
+
+.custom-file-upload {
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    box-sizing: border-box;
+    background-size: cover;
+    
+}
+.icon {
+    pointer-events: none; /* Asegura que los clics en el ícono no sean capturados (es decir, permiten la propagación al input de archivo) */
+  }
+
+.custom-file-upload i {
+    font-size: 24px;
+}
+
+#upload-file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.red-background {
+    position: absolute;
+    top: 330px; /* ajusta este valor basado en la altura del botón y otros elementos, este valor asegura que el div esté debajo del botón de carga */
+    left: 0;
+    right: 0;
+    height: 980px; /* ajusta esto según cuán alto quieres que sea el div */
+    background-color: #ffffffce; /* esto hace que el fondo sea rojo */
+    z-index: 1; /* asegúrate de que no esté encima de otros elementos interactivos */
+    border-radius: 40px;
+    padding: 20px; /* Añade espacio dentro del div rojo. */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    color: rgba(0, 0, 0, 0.397); /* Elige un color que contraste y combine con tu color de fondo rojo. */
+    margin-bottom: 4px; /* Espacio entre la etiqueta y el campo de entrada. */
+}
+
+.form-group {
+    margin-bottom: 15px; /* espacio entre los conjuntos de etiqueta y entrada */
+}
+
+
+
+
+
+

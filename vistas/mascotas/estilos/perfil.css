@@ -1,0 +1,208 @@
+/* Tipo de fuente */
+@font-face {
+    font-family: "Arboria Black";
+    src: url("../../../fonts/Arboria/TTF/Arboria-Black.ttf");
+
+}
+
+@font-face {
+    font-family: "Brandon Med";
+    src: url("../../../fonts/Brandon/Brandon_med.otf");
+}
+
+@font-face {
+    font-family: "Arbora Medium";
+    src: url("../../../fonts/Arboria/TTF/Arboria-Medium.ttf");
+}
+.container {
+    max-width: 600px;
+    min-height: 600px;
+    margin: 20px auto;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    padding: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.custom-img {
+    max-width: 600px;
+    min-height: 40px;
+    margin: 0 auto;
+    display: block;
+    z-index: 1;  
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: -130px auto 20px auto; 
+    display: block;
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);  /* Ajustado el desenfoque y la opacidad para una sombra más oscura */
+    z-index: 2; 
+}
+
+.imagen-pequenia {
+    width: 40px;  
+    height: 40px; 
+    display: block; 
+    margin: 10px auto; 
+}
+
+#demoFont {
+    font-family: "Arboria Black";
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #3C3C3B;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+.img-row a, .img-row img {
+    display: inline-block;  /* Asegura que se comporten como bloques en línea */
+    width: 160px;  /* Asigna el ancho */
+    margin: 0 2%;  /* Agrega márgenes */
+    box-sizing: border-box;  /* Asegura que el margen y el relleno estén incluidos en el ancho */
+    vertical-align: middle;  /* Alinea verticalmente en caso de que haya diferencias de altura */
+    cursor: pointer;
+    transition: filter 0.3s; /* Esto hace que el cambio de color sea suave */
+}
+
+.img-row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 10px; 
+}
+
+
+.boton-salir {
+    display: block;
+    margin: 0 auto; 
+    width: 90%; 
+}
+
+#perfil {
+    font-family: "Arboria Black";
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: bold;
+    font-variant: normal;
+    text-transform: none;
+    position: absolute;
+    left: 50%;
+    top: 65px;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+.logo {
+    z-index: 4;  /* Para asegurarse de que esté encima de la imagen con clase .perfil */
+    position: absolute;
+    top: 10px;   /* Pequeña distancia del borde superior para dar algo de margen */
+    left: 25px;  /* Pequeña distancia del borde izquierdo para dar algo de margen */
+    width: 50px; /* Tamaño reducido */
+    height: auto; /* Para mantener la proporción de la imagen */
+}
+
+
+#familia {
+    font-family: "Arbora Medium";
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.4px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    }
+
+    #ForLaik {
+        font-family: "Arial Black", Gadget, sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #49509B;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+    }
+
+    .imagen_datos:hover {
+        filter: brightness(0.5); /* Puedes ajustar el valor 0.5 a tu preferencia */
+       
+    }
+
+    .clinico:hover {
+        filter: brightness(0.5); /* Puedes ajustar el valor 0.5 a tu preferencia */
+       
+    }
+
+    .llamada:hover {
+        filter: brightness(0.5); /* Puedes ajustar el valor 0.5 a tu preferencia */
+       
+    }
+
+
+    #titulo {
+        font-family: "Arbora Medium";
+        font-size: 15px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #0000004b;
+        font-weight: 700;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        }
+
+        #nombre {
+            /* Espaciado adicional alrededor de todo el contenedor #nombre, ajusta según sea necesario. */
+            padding: 20px; 
+        }
+        
+        #titulo, #familia {
+            /* Esto empujará el contenido un poco a la derecha dentro de #nombre. */
+            margin-left: 30px; 
+        }
+        
+        #familia {
+            /* Espaciado adicional entre #titulo y #familia, ajusta según tus necesidades. */
+            margin-top: 10px;
+        }
+
+        .contenedor-botones {
+            display: flex;
+            justify-content: center; /* Asegura que los elementos estén centrados horizontalmente */
+            align-items: center; /* Alinea los elementos verticalmente */
+            flex-wrap: wrap; /* Si no hay suficiente espacio, los elementos se moverán a la siguiente línea */
+            gap: 10px; /* Mantiene un espacio entre los botones */
+            padding: 20px; /* Espacio interno alrededor de los elementos en el contenedor */
+            margin-top: 20px; /* Espacio entre el contenedor de botones y otros elementos arriba de él */
+        }
+        
+        .boton, .boton-salir {
+            width: 160px; /* Define un ancho específico para los botones, reduciéndolos un poco */
+            height: 60px; /* Define una altura específica para los botones */
+            cursor: pointer; /* Indica que son clickeables */
+            text-align: center; /* Centra el texto (si hay) dentro de los botones */
+            line-height: 40px; /* Asegura que el texto (si hay) esté centrado verticalmente en el botón */
+            /* Otros estilos como bordes, colores, etc., pueden ser añadidos según el diseño deseado */
+        }
+        

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Arboria Black";
+    src: url("../../../fonts/Arboria/TTF/Arboria-Black.ttf");
+    
+}
+@font-face {
+font-family:"Brandon Med";
+    src: url("../../../fonts/Brandon/Brandon_med.otf");
+}
+
+#titulo
+{
+    font-family: "Arboria Black" !important;
+    color:black !important;
+    font-size: 40px;
+}
+
+.label-input100
+{
+    font-family: "Brandon Med" !important;
+    color: rgba(0, 0, 0, 0.404) !important;
+    font-size: 20px;
+}
+
+.login100-form-btn
+{
+    font-family: "Brandon Med" !important;
+    color: white !important;
+    font-size: 15px;
+}

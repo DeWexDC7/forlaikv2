@@ -1,0 +1,177 @@
+/* Tipo de fuente */
+@font-face {
+    font-family: "Arboria Black";
+    src: url("../../../fonts/Arboria/TTF/Arboria-Black.ttf");
+    
+}
+@font-face {
+font-family:"Brandon Med";
+    src: url("../../../fonts/Brandon/Brandon_med.otf");
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 600px;
+    min-height: 900px;
+    margin: 20px auto;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    padding: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Estilos para el banner */
+.banner {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Estilos para el logo */
+.logo {
+    z-index: 4;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    width: 50px;
+    height: auto;
+}
+
+/* Estilos para los datos */
+#datos {
+    font-family:"Arboria Black";
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+/* Estilos para el perfil del usuario */
+.perfil-usuario {
+    position: absolute;
+    top: calc(60% - 430px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+/* Contenedor para la imagen del perfil y el icono */
+.imagen-con-icono {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos para la imagen del perfil */
+.imagen-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilos para el ícono de la cámara */
+.icono-camara {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 5;
+   
+}
+
+/* Estilos para demoFont */
+#demoFont {
+    font-family:"Arboria Black";
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    position: absolute;
+    left: 50%;
+    top: 350px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+}
+
+/* Estilos para el div 'nombre' */
+.nombre {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#titulo {
+    font-family:"Arboria Black";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000; /* Corregido para que sea un color válido */
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-left: 80px; /* Negative value to move to the left */
+
+}
+.input-datos {
+  
+        width: 300px;
+        margin-right: 50px; /* Valor negativo para mover a la izquierda */
+        font-family: "Brandon Med" !important;
+        color: black !important;
+      
+}
+
+
+/* Nuevos estilos para contenedor-botones */
+.contenedor-botones {
+    display: flex;
+    justify-content: center; /* Asegura que los elementos estén centrados horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    flex-wrap: wrap; /* Si no hay suficiente espacio, los elementos se moverán a la siguiente línea */
+    gap: 10px; /* Mantiene un espacio entre los botones */
+    padding: 20px; /* Espacio interno alrededor de los elementos en el contenedor */
+    margin-top: 20px; /* Espacio entre el contenedor de botones y otros elementos arriba de él */
+}
+
+.boton, .boton-salir {
+    width: 160px; /* Define un ancho específico para los botones, reduciéndolos un poco */
+    height: 60px; /* Define una altura específica para los botones */
+    cursor: pointer; /* Indica que son clickeables */
+    text-align: center; /* Centra el texto (si hay) dentro de los botones */
+    line-height: 40px; /* Asegura que el texto (si hay) esté centrado verticalmente en el botón */
+    /* Otros estilos como bordes, colores, etc., pueden ser añadidos según el diseño deseado */
+}
+
